@@ -16,7 +16,12 @@ function App() {
 
   return (
     <div className="App">
-      <div class="beliefslidecontainer">
+        <div className="toptext">
+          <p>"(Click or hover over ? for help)"</p>
+          <p>Overall Political Leaning ?</p>
+        </div>
+
+      <div className="beliefslidercontainer">
         <input type="range" min="-5" max="5" className="beliefslider" step="0.5" value={beliefSlider} onInput={sliderInput} />
       </div>
     </div>

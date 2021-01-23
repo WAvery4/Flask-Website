@@ -1,12 +1,15 @@
-.slidecontainer {
-  width: 100%
+.beliefslidercontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .beliefslider {
   appearance: none;
-  width: 100%; 
+  width: 80%; 
   height: 25px; 
-  background: #d3d3d3; 
+  background: #d3d3d3;
+  border-radius: 5px;
   opacity: 0.7; 
   transition: opacity .2s;
   outline: none;
@@ -19,4 +22,13 @@
   height: 25px;
   background: #4CAF50;
   cursor: pointer;
+}
+
+.toptext {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #CC5500;
 }
