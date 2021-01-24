@@ -10,7 +10,7 @@
   width: 60%; 
   height: 25px; 
   background: #d3d3d3;
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0.7; 
   transition: opacity .2s;
   outline: none;
@@ -30,6 +30,8 @@
   display: flex;
   justify-content: space-between;
   margin-left: 20%;
+  color:#CC5500;
+  margin-bottom: -0.5%;
 }
 
 .belieftitlestable {
@@ -46,11 +48,17 @@
 .table {
   width: 60%;
   border-color: #d3d3d3;
+  font-size: smaller
 }
 
 .tablecontainer {
   display: flex;
   justify-content: center;
+}
+
+.tableheader {
+  color: #CC5500;
+  font-size: small;
 }
 
 td, th {
@@ -66,4 +74,23 @@ td, th {
   color: #CC5500;
   margin-top: 1%;
   font-size: larger;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #d3d3d3;
+  color: #CC5500;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: smaller;
+  text-align: left;
+ 
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

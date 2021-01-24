@@ -23,8 +23,18 @@ function App() {
   return (
     <div className="App">
         <div className="toptext">
-          <p>(Click or hover over ? for help)</p>
-          <p>Overall Political Leaning ?</p>
+          <p>(Click or hover over <b>?</b> for help)</p>
+          <p>
+            Overall Political Leaning 
+            <b className="tooltip"> ?
+              <span className="tooltiptext">
+                Estimated Bias:
+                <br/>
+                Based on the user's interaction with the source reputation, we estimate the political bias
+                of the user and vice versa
+              </span>
+            </b>
+          </p>
         </div>
 
         <div className="belieftitles">
@@ -40,9 +50,33 @@ function App() {
           <table className="table" border={1} frame="void" rules="rows">
             <thead>
               <tr>
-                <th>News Source ?</th>
-                <th>Source Political Leaning ?</th>
-                <th>Source Reputation ?</th>
+                <th className="tableheader">News Source 
+                  <b className="tooltip"> ?
+                    <span className="tooltiptext">
+                      Source:
+                      <br/>
+                      The website that publishes the article
+                    </span>
+                  </b>
+                </th>
+                <th className="tableheader">Source Political Leaning
+                  <b className="tooltip"> ?
+                    <span className="tooltiptext">
+                      Source Bias:
+                      <br/>
+                      We predicted the bias of the source (left means Liberal, middle means neutral, right means high Conservative, click to sort)
+                    </span>
+                  </b>
+                </th>
+                <th className="tableheader">Source Reputation
+                  <b className="tooltip"> ?
+                    <span className="tooltiptext">
+                      Predicted Reputation:
+                      <br/>
+                      We predict the reputation of the source (left means low, middle means unknown, right means high reputation, click to sort)
+                    </span>
+                  </b>
+                </th>
               </tr>
             </thead>
             <tbody>
