@@ -7,7 +7,7 @@
 
 .beliefslider {
   appearance: none;
-  width: 80%; 
+  width: 60%; 
   height: 25px; 
   background: #d3d3d3;
   border-radius: 5px;
@@ -26,17 +26,17 @@
 }
 
 .belieftitles {
-  width: 80%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .belieftitlestable {
   width: 95%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: -4%;
+  margin-bottom: -2%
 }
 
 .slider {
@@ -44,7 +44,7 @@
 }
 
 .table {
-  width: 80%;
+  width: 60%;
   border-color: #d3d3d3;
 }
 

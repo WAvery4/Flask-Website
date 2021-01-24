@@ -4,13 +4,16 @@ function SourceSlider(props) {
     
     const [source, setSource] = useState(0);
 
+    // updates source sliders after data from backend loads in
     useEffect(() => {
         setSource(props.value)
     }, [props.value]);
 
+    // updates source sliders and overall political leaning
     function sliderInput(e) {
         e.preventDefault();
         setSource(e.target.value);
+        props.onChange()
     }
 
     return (

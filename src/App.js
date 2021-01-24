@@ -6,11 +6,17 @@ function App() {
 
   const [newsData, setNewsData] = useState([[0,0,0], [0,0,0], [0,0,0], [0,0,0], [0,0,0]]);
 
+  // loads data from the backend
   useEffect(() => {
     fetch('/api/data').then(res => res.json()).then(data => {
       setNewsData(data.data)
     });
   }, []);
+
+  // updates overall political leaning when source sliders change
+  function updateOverallLeaning() {
+
+  }
 
   return (
     <div className="App">
@@ -47,7 +53,7 @@ function App() {
                   </div>
                   <input type="range" min="-1" max="1" className="slider" value={newsData[0][1]} step="0.5" disabled={true} />
                 </td>
-                <td><SourceSlider value={newsData[0][2]} /></td>
+                <td><SourceSlider value={newsData[0][2]} onChange={updateOverallLeaning} /></td>
               </tr>
               <tr>
                 <td>{newsData[1][0]}</td>
