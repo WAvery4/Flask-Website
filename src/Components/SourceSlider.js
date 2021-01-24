@@ -12,8 +12,8 @@ function SourceSlider(props) {
     // updates source sliders and overall political leaning
     function sliderInput(e) {
         e.preventDefault();
+        props.onChange(Math.sign(e.target.value-source), props.id);
         setSource(e.target.value);
-        props.onChange()
     }
 
     return (
