@@ -12,3 +12,5 @@ def index():
 def manipulate_data():
     data = [["abc.com", 1, 0], ["lion.com", 0.5, 0.5], ["xyz.com", -0.5, 1], ["politexas.com", -1, 0], ["usp.com", 0, 0]]
     return {'data': data}
+
+
