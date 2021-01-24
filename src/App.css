@@ -41,6 +41,38 @@
   margin-bottom: -2%
 }
 
+.qmark {
+  background-image: url('./qmark.png');
+  background-size: 20px 20px;
+  border-radius: 20px;
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display: inline-flex;
+  height: 20px;
+  width: 20px;
+}
+
+.qmark1 {
+  background-image: url('./qmark.png');
+  background-size: 15px 15px;
+  border-radius: 15px;
+  border: none;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display: inline-flex;
+  height: 15px;
+  width: 15px;
+}
+
+.qmark:hover .tooltiptext {
+  visibility: visible;
+}
+
+.qmark1:hover .tooltiptext {
+  visibility: visible;
+}
+
 .slider {
   width: 95%;
 }
@@ -78,7 +110,7 @@ td, th {
 
 .tooltiptext {
   visibility: hidden;
-  width: 300px;
+  width: 200px;
   background-color: #d3d3d3;
   color: #CC5500;
   text-align: center;
@@ -89,8 +121,4 @@ td, th {
  
   position: absolute;
   z-index: 1;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }

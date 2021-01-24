@@ -23,17 +23,16 @@ function App() {
   return (
     <div className="App">
         <div className="toptext">
-          <p>(Click or hover over <b>?</b> for help)</p>
+          <p>(Click or hover over <button className="qmark" type="button" /> for help)</p>
           <p>
-            Overall Political Leaning 
-            <b className="tooltip"> ?
+            Overall Political Leaning <button className="qmark" type="button">
               <span className="tooltiptext">
                 Estimated Bias:
                 <br/>
                 Based on the user's interaction with the source reputation, we estimate the political bias
                 of the user and vice versa
               </span>
-            </b>
+            </button>
           </p>
         </div>
 
@@ -50,32 +49,29 @@ function App() {
           <table className="table" border={1} frame="void" rules="rows">
             <thead>
               <tr>
-                <th className="tableheader">News Source 
-                  <b className="tooltip"> ?
+                <th className="tableheader">News Source <button className="qmark1" type="button">
                     <span className="tooltiptext">
                       Source:
                       <br/>
                       The website that publishes the article
                     </span>
-                  </b>
+                  </button>
                 </th>
-                <th className="tableheader">Source Political Leaning
-                  <b className="tooltip"> ?
+                <th className="tableheader">Source Political Leaning <button className="qmark1" type="button">
                     <span className="tooltiptext">
                       Source Bias:
                       <br/>
                       We predicted the bias of the source (left means Liberal, middle means neutral, right means high Conservative, click to sort)
                     </span>
-                  </b>
+                  </button>
                 </th>
-                <th className="tableheader">Source Reputation
-                  <b className="tooltip"> ?
+                <th className="tableheader">Source Reputation <button className="qmark1" type="button">
                     <span className="tooltiptext">
                       Predicted Reputation:
                       <br/>
                       We predict the reputation of the source (left means low, middle means unknown, right means high reputation, click to sort)
                     </span>
-                  </b>
+                  </button>
                 </th>
               </tr>
             </thead>
